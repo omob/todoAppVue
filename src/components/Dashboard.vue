@@ -11,7 +11,6 @@
             <b-row>
                 <div v-for="(list, index) in lists" :key="index" class="list-wrapper"> 
                     <div class="header text-left d-flex flex-row">
-                        <!-- <h3> {{ list.title }} </h3> -->
                         <b-input
                             class="list-header"
                             v-model="list.title"
@@ -52,23 +51,6 @@
             </b-row>
         </b-container>
     </div>
-
-    <!-- <div class="container-fluid position-relative mt-5">
-        <div id="board">
-            <div class="list-wrapper" v-for="(list, index) in lists" :key="index">
-                <div class="list list-content" >
-                    <b-card :title="list.title" sub-title="Card subtitle">
-                        <b-card-text>
-                        Some quick example text to build on the <em>card title</em> and make up the bulk of the card's
-                        content.
-                        </b-card-text>
-                    </b-card>
-                </div>
-            </div>
-            <AddNewList v-on:addNewList="addNewList" class="list-wrapper"> </AddNewList>
-
-        </div>
-    </div> -->
 </template>
 
 <script>
@@ -86,12 +68,6 @@ export default {
             title: 'My Todo List',
             lists: [
                 { title: "Test", cards: []}
-            ],
-            people: [
-                'Dee',
-                'Dee3',
-                'Dee4',
-                'Dee5'
             ]
         }
     },
@@ -168,48 +144,4 @@ header .title:hover:not(:focus) {
 .list-content .card-list:hover {
     background-color: rgb(248, 248, 248);
 }
-
-/* 
-#board {
-    user-select: none;
-    white-space: nowrap;
-    margin-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 8px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.list-wrapper {
-    width: 272px;
-    margin: 0 4px;
-    height: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-}
-
-.list-wrapper:first-child {
-    margin-left: 8px;
-}
-
-.list {
-    background-color: #ebecf0;
-    border-radius: 3px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    max-height: 100%;
-    position: relative;
-    white-space: normal;
-}
-.list-content {
-    
-} */
 </style>
