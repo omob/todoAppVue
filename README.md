@@ -1,4 +1,6 @@
-# todos
+# Todo App in Vue
+
+A simple replica of [Trello](http://trello.com)
 
 ## Project setup
 ```
@@ -19,6 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
